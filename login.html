@@ -1,37 +1,92 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title> login page </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup Form</title>
+  <style>
+    body {
+      background-color: #222;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      width: 300px;
+      margin: 200px auto;
+      background-color: #333;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .container h1 {
+      color: #fff;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      color: #fff;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 8px;
+      border: none;
+      border-radius: 3px;
+    }
+
+    .form-group input[type="submit"] {
+      background-color: #008cba;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .form-group input[type="submit"]:hover {
+      background-color: #00677d;
+    }
+  </style>
 </head>
-<body bgcolor="BLACK" text="WHITE">
-   <center>
-    <h2>LOGIN HERE </h2>
-    <form action="" method="post">
-        <table>
-            <tr>
-                <td>
-                    USERNAME: 
-                </td>
-                <td>
-                    <input type ="text" name="user">
-                </td>
-            </tr>
-            <tr>
-                <td>PASSWORD: </td>
-                <TD>
-                    <input type="password" name="user_pass">
-                </TD>
-            </tr>
-            <tr>
-                <td>
-                    <input type="submit" name="submit" value="LOGIN">
-                </td>
-            
-            
-                <td>NOT YET A MEMBER?<a href= "rush.html">REGISTER</a></td>
-            </tr>
-        </table>
+<body>
+  <div class="container">
+    <h1>Login</h1>
+    <form>
+      <div class="form-group">
+        <label for="email">Username</label>
+        <input type="email" id="username" name="text" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <!-- <div class="form-group">
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+      </div>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+      </div> -->
+      <!-- <div class="form-group">
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" required>
+      </div>-->
+      <div class="form-group">
+        <input type="submit" value="Login">
+
+
+      <div class="form-group">
+        <label for="submit">     or     </label>
+        <input type="submit" value="Register">
+      </div>
+      </div> 
     </form>
-   </center>
+  </div>
 </body>
 </html>
