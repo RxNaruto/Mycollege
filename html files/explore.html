@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./explore.css" />
+
+  <title>Dark Theme</title>
+  <style>
+    body {
+      background-color: #222;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      background-color: #111;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80px;
+      padding: 0 20px;
+    }
+
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+
+    .navbar a:hover {
+      color: #0066cc;
+    }
+
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 20px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 30px 60px;
+      margin: 20px;
+      text-decoration: none;
+      color: #fff;
+      background-color: rgb(34, 35, 36);
+      border: 2px solid #2183e5;
+      border-radius: 10px;
+      font-size: 24px;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #2282e2;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <a href="/">Home</a>
+    <a href="#">Hackathon</a>
+    <a href="#">Events</a>
+  </div>
+  <div class="content">
+    <div class="button-container">
+      <a href="{% url 'projectsfn' %}" class="button">Web Development</a>
+      <a href="#" class="button">App Development</a>
+    </div>
+    <div class="button-container">
+      <a href="#" class="button">AI/ML</a>
+      <a href="#" class="button">Blockchain Technology</a>
+    </div>
+  </div>
+  <div class="footer-dark">
+    <footer>
+        <div class="container">
+            <div class="row">
+                 
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>About</h3>
+                    <!-- <ul>
+                        <li><a href="#">Company</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul> -->
+                </div>
+                <div class="col-md-6 item text">
+                    <h3>Company Name</h3>
+                    <p>We are focusing to build a community of students where ideas could get air</p>
+                <!-- </div>
+                <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+            </div> -->
+            <p class="copyright">Company Name © 2023</p>
+        </div>
+    </footer>
+</div>
+  
+</body>
+</html>

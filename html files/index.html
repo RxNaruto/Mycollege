@@ -1,0 +1,75 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+  <link rel="stylesheet" href="./index.css" />
+
+  <link rel="stylesheet" href="{%static 'global.css' %}" />
+  <link rel="stylesheet" href="{%static 'index.css' %}" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Dots:wght@400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Varta:wght@400&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="home">
+    <nav class="navbar">
+      <img class="home-icon" alt="" src="{%static 'imgs/home.svg' %}" />
+      <div class="text">Upcoming Events</div>
+      <div class="text1">Fields</div>
+      <div class="text3">Hackathons</div>
+      <div class="text2" id="text2">Sign Up</div>
+      
+    </nav>
+    <h1 class="join-community" id="joinCommunity">Explore Communities</h1>
+    <img class="home-child" alt="" src="{%static 'imgs/rectangle-89.svg' %}" />
+  </div>
+  
+  <script>
+    var text2 = document.querySelector("#text2");
+    if (text2) {
+      text2.addEventListener("click", function (e) {
+        window.location.href = "/signup";
+      });
+    }
+    
+    var joinCommunity = document.querySelector("#joinCommunity");
+    if (joinCommunity) {
+      joinCommunity.addEventListener("click", function (e) {
+        window.location.href = "/explore";
+      });
+    }
+  </script>
+  
+  <div class="footer-dark">
+    <footer>
+        <div class="container">
+            <div class="row">
+                 
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>About</h3>
+                    <!-- <ul>
+                        <li><a href="#">Company</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul> -->
+                </div>
+                <div class="col-md-6 item text">
+                    <h3>Company Name</h3>
+                    <p>We are focusing to build a community of students where ideas could get air</p>
+                <!-- </div>
+                <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+            </div> -->
+            <p class="copyright">Company Name © 2023</p>
+        </div>
+    </footer>
+  </div>
+
+
+
+    
+  
+
+</body>
+</html>
