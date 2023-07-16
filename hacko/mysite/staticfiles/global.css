@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    line-height: normal;
+  }
+  
+  :root {
+    /* fonts */
+    --font-varta: Varta;
+    --font-zen-dots: "Zen Dots";
+    --button-large: Poppins;
+  
+    /* font sizes */
+    --font-size-xl: 20px;
+    --font-size-29xl: 48px;
+    --button-large-size: 16px;
+  
+    /* Colors */
+    --main-white: #fff;
+  
+    /* Paddings */
+    --padding-29xl: 48px;
+    --padding-base: 16px;
+    --padding-13xl: 32px;
+  
+    /* border radiuses */
+    --br-1208xl-5: 1227.5px;
+    --br-5xs: 8px;
+  }
+  

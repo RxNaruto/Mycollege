@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+  <link rel="stylesheet" href="{% static 'global.css' %}" />
+  <link rel="stylesheet" href="{% static 'index.css' %}" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Dots:wght@400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Varta:wght@400&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="home">
+    <nav class="navbar">
+      <img class="home-icon" alt="" src="{% static 'imgs/home.svg' %}" />
+      <div class="text">Upcoming Events</div>
+      <a href="#" class="text1">Fields</a>
+      <a href="#" class="text3">Hackathons</a>
+      <div class="text2" id="text2">Sign Up</div>
+    </nav>
+    <h1 class="join-community" id="joinCommunity">Explore Communities</h1>
+    <img class="home-child" alt="" src="{% static 'imgs/rectangle-89.svg' %}" />
+  </div>
+  
+  <script>
+    var text2 = document.querySelector("#text2");
+    if (text2) {
+      text2.addEventListener("click", function (e) {
+        window.location.href = "/signup";
+      });
+    }
+    
+    var joinCommunity = document.querySelector("#joinCommunity");
+    if (joinCommunity) {
+      joinCommunity.addEventListener("click", function (e) {
+        window.location.href = "/explore";
+      });
+    }
+  </script>
+  
+</body>
+</html>
