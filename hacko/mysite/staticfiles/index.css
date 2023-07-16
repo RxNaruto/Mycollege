@@ -1,0 +1,109 @@
+.home-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 32px;
+  }
+  .text {
+    position: absolute;
+    top: calc(50% - 12px);
+    left: calc(50% - 318.5px);
+    letter-spacing: 0.2px;
+    line-height: 24px;
+    font-weight: 600;
+    background: linear-gradient(133.99deg, #18a1cc, #92d1ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .text1 {
+    left: calc(50% - 76.5px);
+    cursor: pointer;
+  }
+  .text1,
+  .text2,
+  .text3,.text4 {
+    position: absolute;
+    top: calc(50% - 12px);
+    letter-spacing: 0.2px;
+    line-height: 24px;
+    font-weight: 600;
+    background: linear-gradient(133.99deg, #18a1cc, #92d1ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .text2 {
+    left: calc(50% + 371.5px);
+    cursor: pointer;
+  }
+  .text3 {
+    left: calc(50% + 122.5px);
+  }
+  .text4 {
+    left: auto;
+  }
+  
+  .join-community,
+  .navbar {
+    margin: 0;
+    align-self: stretch;
+    position: relative;
+  }
+  .navbar {
+    height: 32px;
+    text-align: center;
+    font-size: var(--button-large-size);
+    font-family: var(--button-large);
+  }
+  .join-community {
+    font-size: inherit;
+    letter-spacing: 0.2px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: inherit;
+    -webkit-text-stroke: 1px #fff;
+  }
+  .home-child {
+    position: relative;
+    border-radius: 1227.47px;
+    width: 1280px;
+    height: 1274.55px;
+    mix-blend-mode: overlay;
+  }
+  .see-more {
+    align-self: stretch;
+    position: relative;
+    font-size: var(--font-size-xl);
+    letter-spacing: 0.2px;
+    line-height: 24px;
+    font-family: var(--font-varta);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+    flex-shrink: 0;
+  }
+  .chevron-icon {
+    position: relative;
+    width: 32px;
+    height: 32px;
+  }
+  .home {
+    position: relative;
+    background-color: #131126;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: var(--padding-29xl) 134px var(--padding-29xl) 75px;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 220px;
+    text-align: center;
+    font-size: var(--font-size-29xl);
+    color: var(--main-white);
+    font-family: var(--font-zen-dots);
+  }
+  
